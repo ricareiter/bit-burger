@@ -1,9 +1,11 @@
+import Feature from "./Feature";
 import Hero from "./hero/Hero";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
+      <Feature />
     </div>
   );
 };
