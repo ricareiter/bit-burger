@@ -1,4 +1,6 @@
+import Delivery from "./Delivery";
 import Feature from "./Feature";
+import PopularBurgers from "./PopularBurgers";
 import Hero from "./hero/Hero";
 
 const Home = () => {
@@ -6,6 +8,8 @@ const Home = () => {
     <div className="overflow-hidden">
       <Hero />
       <Feature />
+      <PopularBurgers />
+      <Delivery />
     </div>
   );
 };
