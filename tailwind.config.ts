@@ -7,7 +7,25 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateX(-500px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+      },
+      animation: {
+        slideinslow: "slidein 5s ease 300ms",
+        slideinmedium: "slidein 3s ease 300ms",
+        slideinfast: "slidein 2s ease 300ms",
+      },
+    },
   },
   plugins: [],
 };

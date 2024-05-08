@@ -5,6 +5,7 @@ interface Props {
   burgerTitle: string;
   burgerDescription: string;
   extraClass?: string;
+  animation: string;
 }
 
 const FeaturedBurger = ({
@@ -12,9 +13,10 @@ const FeaturedBurger = ({
   burgerTitle,
   burgerDescription,
   extraClass,
+  animation,
 }: Props) => {
   return (
-    <div>
+    <div className={animation}>
       <div
         className={`p-6 hover:bg-white ${extraClass} rounded-lg transition-all duration-200`}
       >
